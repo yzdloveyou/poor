@@ -23,15 +23,16 @@
         android:paddingLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
+
     <GridView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:gravity="center"
         android:id="@+id/grd2"
-       android:verticalSpacing="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="3"></GridView>
+        android:layout_height="422dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"></GridView>
     <TextView
         android:gravity="center_vertical"
         android:text="热点"
