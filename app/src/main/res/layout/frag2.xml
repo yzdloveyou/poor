@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/redbg"
     >
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
         android:text="旅游圈"
         android:textColor="#fff"
-        android:textSize="18sp" />
+        android:textSize="18dp" />
 
     <GridView
+        android:paddingTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/grid"
+        android:scrollbars="none"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="515dp"
+        android:layout_height="match_parent"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:background="@drawable/bg"
-        android:gravity="center"
-        android:horizontalSpacing="10dp"
+        android:horizontalSpacing="0dp"
         android:numColumns="2"
-        android:verticalSpacing="10dp"></GridView>
-
-
-
-
-
-
+        android:verticalSpacing="25dp">
+    </GridView>
 </LinearLayout>

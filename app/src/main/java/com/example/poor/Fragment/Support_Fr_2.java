@@ -15,12 +15,13 @@ import androidx.annotation.Nullable;
 
 
 import com.example.poor.R;
+import com.example.poor.adpter.TourGridviewAdapter;
 
 import me.yokeyword.fragmentation.SupportFragment;
 
 public class Support_Fr_2 extends SupportFragment  {
     GridView gridView;
-
+TourGridviewAdapter tourGridviewAdapter;
     public static Support_Fr_2 newInstance() {
         Bundle args = new Bundle();
         Support_Fr_2 fragment = new Support_Fr_2();
@@ -32,7 +33,9 @@ public class Support_Fr_2 extends SupportFragment  {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        View view2=inflater.inflate(R.layout.frag2,null);
-
+        gridView=(GridView)view2.findViewById(R.id.grid);
+        tourGridviewAdapter=new TourGridviewAdapter(getActivity());
+        gridView.setAdapter(tourGridviewAdapter);
         return view2;
     }
 
