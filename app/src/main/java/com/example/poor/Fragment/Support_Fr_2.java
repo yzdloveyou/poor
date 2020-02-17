@@ -21,11 +21,11 @@ import me.yokeyword.fragmentation.SupportFragment;
 
 public class Support_Fr_2 extends SupportFragment  {
     GridView gridView;
-TourGridviewAdapter tourGridviewAdapter;
+TourGridviewAdapter tourGridviewAdapter;//自建的adpter
     public static Support_Fr_2 newInstance() {
-        Bundle args = new Bundle();
+        Bundle args = new Bundle();//Bundle是用来传递数据的“容器”
         Support_Fr_2 fragment = new Support_Fr_2();
-        fragment.setArguments(args);
+        fragment.setArguments(args);//官方推荐Fragment.setArguments(Bundle bundle)这种方式来传递参数
         return fragment;
     }
 
@@ -34,8 +34,8 @@ TourGridviewAdapter tourGridviewAdapter;
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        View view2=inflater.inflate(R.layout.frag2,null);
         gridView=(GridView)view2.findViewById(R.id.grid);
-        tourGridviewAdapter=new TourGridviewAdapter(getActivity());
-        gridView.setAdapter(tourGridviewAdapter);
+        tourGridviewAdapter=new TourGridviewAdapter(getActivity());//getActivity是Fragment类中的方法（官方）
+        gridView.setAdapter(tourGridviewAdapter);//设置适配器
         return view2;
     }
 

@@ -39,14 +39,14 @@ public class TourGridviewAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         View view1 = LayoutInflater.from(context).inflate(R.layout.wangge2, viewGroup,false);
-        TextView textView = (TextView) view1.findViewById(R.id.text);
-        ViewGroup viewGroup1=(ViewGroup) view1.findViewById(R.id.l1);
-        ImageView imageView=(ImageView)view1.findViewById(R.id.image);
-        viewGroup1.setBackgroundColor(Color.parseColor(colors[i]));
-        textView.setText(a[i]);
-        imageView.setImageResource(images[i]);
+        TextView textView = (TextView) view1.findViewById(R.id.text);//text是wangge2中TextView的id
+        ViewGroup viewGroup1=(ViewGroup) view1.findViewById(R.id.l1);//l1是wangge2的id
+        ImageView imageView=(ImageView)view1.findViewById(R.id.image);//image是wangge2中ImageView的id
+        viewGroup1.setBackgroundColor(Color.parseColor(colors[i]));//设定每个方框的颜色用setBackgroundColor方法，Color类中的praseColor方法
+        textView.setText(a[i]);//设定方框的文字
+        imageView.setImageResource(images[i]);//设定方框里的图片里面的形参都是数组？
 //            Glide.with(context).load(url[i]).into(imageView);
-
+//View，ViewGroup，Color是系统类，
         return view1;
     }
 }

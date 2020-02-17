@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.poor.R;
+
 import me.yokeyword.fragmentation.SupportFragment;
 
 public class Support_Fr_4 extends SupportFragment  {
@@ -22,7 +24,8 @@ public class Support_Fr_4 extends SupportFragment  {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return null;
+        View view4=inflater.inflate(R.layout.frag4,null);
+        return view4;
     }
 }
 
