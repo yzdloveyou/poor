@@ -13,16 +13,16 @@ import com.example.poor.R;
 
 public class GridViewAdapter extends BaseAdapter {
     Context context;
-    String a[] = {"第一书记", "贫困人口", "贫困人口分布", "联邦到户干部", "已完成项目", "进行中的项目"};
-    String b[] = {"67人", "132人", "135个村", "650人", "4项", "16项"};
-
+    String a[] = {"已完成项目", "进行中的项目","扶贫地区统计"};
+    String b[] = { "4项", "16项","16个"};
+int bg[]={R.drawable.yuan,R.drawable.yuan1,R.drawable.yuan2};
     public GridViewAdapter(Context context1) {
         context = context1;
     }
 
     @Override
     public int getCount() {
-        return 6;
+        return 3;
     }
 
     @Override
@@ -42,6 +42,7 @@ public class GridViewAdapter extends BaseAdapter {
         TextView textView1 = (TextView) view1.findViewById(R.id.yyy3);
         textView.setText(a[i]);
         textView1.setText(b[i]);
+        textView1.setBackground(context.getResources().getDrawable(bg[i]));
 //            Glide.with(context).load(url[i]).into(imageView);
 
         return view1;

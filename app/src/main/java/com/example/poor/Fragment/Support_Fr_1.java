@@ -55,7 +55,7 @@ public class Support_Fr_1 extends SupportFragment implements OnBannerListener {
         //设置网格
         setWangge();
         //加载list
-//        setList();
+        setList();
         return view;
     }
     public void setWangge() {
