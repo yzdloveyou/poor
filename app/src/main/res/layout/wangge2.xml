@@ -3,7 +3,7 @@
    android:id="@+id/l1"
     android:orientation="vertical"
     android:layout_width="110dp"
-    android:background="#ACD7EB"
+    android:background="#FFF"
     android:gravity="center"
     android:layout_height="110dp">
 <ImageView

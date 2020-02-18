@@ -8,7 +8,7 @@
         android:text="热讯快看"
         android:textColor="#fff"
         android:textSize="18dp"
-        android:background="#79CCD6"
+        android:background="#DA2020"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
         <com.youth.banner.Banner
