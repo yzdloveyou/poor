@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="#00D02323"
@@ -17,20 +17,23 @@
 
             <Button
                 android:id="@+id/Button"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"
+                android:gravity="center"
                 android:background="@drawable/close" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
                 android:text="收藏"
                 android:textSize="20dp"
                 android:textColor="#BA2020"
                 android:gravity="center"/>
-        </LinearLayout>
+        </RelativeLayout>
 
         <ListView
             android:id="@+id/collect_listview"
