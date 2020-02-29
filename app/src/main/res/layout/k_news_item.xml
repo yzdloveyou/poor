@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@null"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/image1_news"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/poor1"/>
+    <TextView
+        android:id="@+id/text1_news"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/image1_news"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:text="上海环球港，将商业，旅游，文化的功能都全面基于其独具特殊的购物环境"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/image1_news"
+        android:background="#26BABABA"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text2_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/image2_news"
+            android:gravity="center"
+            android:text="恭喜发财" />
+
+        <ImageView
+            android:id="@+id/image2_news"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poor2" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
